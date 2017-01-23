@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+@if (Request.IsAuthenticated)
+{
+    <h1>Welcome!!  @ViewBag.DisplayName </h1>
+}
+else
+{
+    <h1>Azure Active Directory B2C</h1>
+    <p class="lead">コンシューマーの ID とアクセスの管理をクラウドで実行</p>
+    <table style="border-style:none;">
+            <tr><td style="border-style:none;"> コンシューマーとのつながりを向上</td><td style="border-style:none;">コンシューマーの ID を保護</td></tr>
+            <tr><td style="border-style:none;"> 使用した分だけお支払い</td><td style="border-style:none;">自分のソーシャル メディア アカウントを使用できる</td></tr>
+            <tr><td style="border-style:none;"> 何億人ものコンシューマーに対応したスケールアップが可能</td><td style="border-style:none;">対話のワークフローをカスタマイズ可能</td></tr>
+    </table>
+    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>}
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Azure Active Directory B2C の詳細</h2>
+        <p>
+            毎日数十億もの認証を処理する、高度にセキュアなクラウド プラットフォームである
+            Azure Active Directory を基盤とした Azure Active Directory B2C は、何億もの ID を
+            扱うコンシューマー向けのアプリケーションに対応した、可用性が高く、世界規模の
+            ID 管理サービスです。
+        </p>
+        <p><a class="btn btn-default" href="https://azure.microsoft.com/ja-jp/services/active-directory-b2c/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>料金</h2>
+        <p>Azure Active Directory (Azure AD) B2C の使用量は、以下の両方に基づいて、月単位で課金されます。</p>
+        <ul>
+            <li>保存済みユーザー数</li>
+            <li>認証数</li>
+        </ul>
+        <br />
+        <br/>
+        <p><a class="btn btn-default" href="https://azure.microsoft.com/ja-jp/pricing/details/active-directory-b2c/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>ドキュメント</h2>
+        <p>Active Directory B2C のドキュメントのドキュメントは<a href="https://docs.microsoft.com/ja-jp/azure/active-directory-b2c/">こちら</a>です。
+        <br/><br /><br/></p>
+        <p><a class="btn btn-default" href="https://docs.microsoft.com/ja-jp/azure/active-directory-b2c/">Learn more &raquo;</a></p>
+    </div>
+</div>
