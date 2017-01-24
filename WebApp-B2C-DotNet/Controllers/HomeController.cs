@@ -14,8 +14,8 @@ namespace WebApp_OpenIDConnect_DotNet_B2C.Controllers
             if (Request.IsAuthenticated)
             {
                 Claim displayName = ClaimsPrincipal.Current.FindFirst(ClaimsPrincipal.Current.Identities.First().NameClaimType);
-                ViewBag.DisplayName = displayName != null ? displayName.Value : string.Empty;
-                return View();
+                 ViewBag.DisplayName = displayName != null ? displayName.Value : string.Empty;
+                 return View();
             }
 
             return View();
